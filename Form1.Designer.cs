@@ -68,10 +68,11 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.chart6 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart5 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label2 = new System.Windows.Forms.Label();
-            this.progress = new System.Windows.Forms.ProgressBar();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.chart7 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label2 = new System.Windows.Forms.Label();
+            this.progress = new System.Windows.Forms.ProgressBar();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -113,9 +114,9 @@
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button2.Location = new System.Drawing.Point(640, 594);
+            this.button2.Location = new System.Drawing.Point(868, 594);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(276, 43);
+            this.button2.Size = new System.Drawing.Size(156, 43);
             this.button2.TabIndex = 2;
             this.button2.Text = "Exit";
             this.button2.UseVisualStyleBackColor = true;
@@ -387,25 +388,6 @@
             this.chart5.TabIndex = 0;
             this.chart5.Text = "chart5";
             // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(49, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 16);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Input file";
-            // 
-            // progress
-            // 
-            this.progress.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.progress.Location = new System.Drawing.Point(661, 43);
-            this.progress.Name = "progress";
-            this.progress.Size = new System.Drawing.Size(237, 23);
-            this.progress.TabIndex = 10;
-            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.chart7);
@@ -441,11 +423,41 @@
             this.chart7.TabIndex = 0;
             this.chart7.Text = "chart7";
             // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(49, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 16);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Input file";
+            // 
+            // progress
+            // 
+            this.progress.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.progress.Location = new System.Drawing.Point(661, 43);
+            this.progress.Name = "progress";
+            this.progress.Size = new System.Drawing.Size(237, 23);
+            this.progress.TabIndex = 10;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(536, 594);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(194, 43);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Search in log";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1056, 669);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.progress);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tabControl1);
@@ -457,6 +469,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "ADIF Analyser";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -500,6 +513,7 @@
         private System.Windows.Forms.ProgressBar progress;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart7;
+        private System.Windows.Forms.Button button1;
     }
 }
 

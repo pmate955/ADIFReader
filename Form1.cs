@@ -625,5 +625,20 @@ namespace ADIFReader
             }
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (location.Length > 0)
+            {
+                SearchForm sf = new SearchForm(location, counter);
+                sf.Visible = true;
+            }
+        }
+
+        
     }
 }
